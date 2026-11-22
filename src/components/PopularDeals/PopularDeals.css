@@ -1,0 +1,248 @@
+.popular-deals {
+    padding: 80px 20px;
+}
+
+.popular-deals__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popular-deals__header {
+    text-align: center;
+    margin-bottom: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popular-badge {
+    background-color: var(--btn-secondary);
+    color: var(--accent-secondary);
+    font-size: 14px;
+    padding: 12px 32px;
+    border-radius: var(--corner-radius-sm);
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+.popular-badge:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px var(--accent-secondary);
+}
+
+.popular-title {
+    font-size: 38px;
+    font-weight: 500;
+    margin-top: 16px;
+
+}
+
+.popular-deals__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    width: 100%;
+}
+
+.car-card {
+    background: var(--text-secondary);
+    border-radius: var(--corner-radius-m);
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.car-card:hover {
+    transform: scale(1.05);
+    clip-path: polygon(10% 0%, 90% 0%, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0% 90%, 0% 10%);
+}
+
+.car-card__image {
+    width: 100%;
+    max-width: 256px;
+    height: 155px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.car-card__image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.car-card__title {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--dark-primary);
+    margin: 0 0 8px 0;
+}
+
+.car-card__rating {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--dark-primary);
+    margin-bottom: 20px;
+}
+
+.car-card__rating .star img {
+    width: 14px;
+    height: 14px;
+}
+
+.car-card__rating .reviews {
+  color: var(--reviews);
+  font-weight: 400;
+}
+
+.car-card__features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px 16px;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid var(--text-trtiary);
+    font-size: 12px;
+    color: var(--text-trtiary);
+}
+
+.car-card__features div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.car-card__features div img {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+}
+
+.car-card__footer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.car-card__price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price-lable {
+  font-size: 14px;
+  color: var(--price);
+  
+}
+
+.car-price {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--dark);
+}
+
+.car-day {
+  font-size: 14px;
+  color: var(--day);
+}
+
+.rent-btn {
+    width: 100%;
+    background-color: var(--btn);
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    border-radius: var(--corner-radius-sm);
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: background-color 0.2s ease;
+}
+
+.rent-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px var(--btn-secondary);
+}
+
+.rent-btn span img {
+    display: flex;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1); 
+}
+
+.popular-deals__more {
+    margin-top: 48px;
+}
+
+.show-all__btn {
+    border: 1px solid var(--border);
+    background-color: var(--text-secondary);
+    color: var(--btn-text);
+    font-size: 14px;
+    padding: 12px 32px;
+    border-radius: var(--corner-radius-sm);
+    display: inline-block;
+    margin-top: 30px;
+    gap: 8px;
+    transition: all 0.2s ease;
+
+    display: flex;
+    align-items: center;
+
+}
+
+.show-all__btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px ;
+}
+
+.show-all__btn span img {
+    display: flex;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+}
+
+@media (max-width: 1200px) {
+  .popular-deals__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .popular-title {
+    font-size: 28px;
+  }
+
+  .popular-deals__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .car-card {
+    padding: 24px;
+    align-items: center;
+  }
+
+  .car-card__features {
+    width: 100%;
+  }
+
+  .car-card__footer {
+    width: 100%;
+  }
+}

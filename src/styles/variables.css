@@ -1,0 +1,58 @@
+:root {
+    /* fonts */
+    --water-brush: 'Water Brush', cursive;
+    --work-sans: 'Work Sans', sans-serif;
+   --clicker-script:'Clicker Script', cursive;
+
+   /* colors */
+   --accent-primary: #333333;
+   --accent-secondary: #1572D3;
+   --dark-primary: #262626;
+   --dark: #292929;
+   --text-secondary: #FFFFFF;
+   --text-trtiary: #959595;
+
+   --color: #B6B6B6;
+
+   --subtitle: #6D6D6D;
+
+   --title: #242424;
+
+   --btn-text: #4E4E4E;
+
+   --btn: #1572D3;
+   --btn-secondary: #ECF5FF;
+
+   --reviews: #808080;
+
+   --name: #252525;
+
+   
+
+   --price: #595959;
+
+   --day: #9C9C9C;
+
+   --bg-footer: #051C34;
+
+   --footer-color: #D6D6D6;
+  
+
+
+
+   /* gradients */
+
+   --gradient-primary: linear-gradient(var(--accent-primary),var(--accent-secondary));
+
+   /* radius */
+
+   --corner-radius-sm: 8px;
+   --corner-radius-m: 16px;
+   --corner-radius-l: 24px;
+
+
+   /* border */
+   --border: #E0E0E0;
+
+   --bg: #F7FBFF;
+}

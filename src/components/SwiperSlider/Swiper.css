@@ -1,0 +1,123 @@
+.brands-section {
+    padding-block: 40px;
+}
+
+.brands-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.brands-btn {
+    color: var(--accent-secondary);
+    font-size: 14px;
+    padding: 12px 32px;
+    background: var(--btn-secondary);
+    border-radius: var(--corner-radius-sm);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.brands-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px var(--accent-secondary);
+}
+
+.brands-title {
+    font-size: 38px;
+    margin-bottom: 40px;
+}
+
+.steps {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+
+.steps-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.steps-btn {
+    padding: 20px 20px;
+    background: var(--btn-secondary);
+    border-radius: var(--corner-radius-sm);
+    margin-bottom: 20px;
+}
+
+.steps-title {
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.steps-subtitle {
+    font-size: 12px;
+    color: var(--subtitle);
+    max-width: 155px;
+    margin-bottom: 80px;
+}
+
+.brands-swiper {
+    width: 100%;
+    padding-block: 20px;
+}
+
+.brands-swiper .swiper-slide,
+.brands-swiper__slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brands-swiper .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brands-swiper .swiper-wrapper {
+    transition-timing-function: linear !important;
+}
+
+.brand-logo {
+    max-width: 140px; 
+    max-height: 40px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    filter: grayscale(100%);
+    opacity: 0.7;
+    transition: filter 0.3s, opacity 0.3s;
+}
+
+.brand-logo:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .brands-title {
+    font-size: 28px;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+
+  .steps {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .steps-subtitle {
+    margin-bottom: 20px;
+  }
+}
